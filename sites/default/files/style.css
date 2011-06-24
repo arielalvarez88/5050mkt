@@ -1,0 +1,1108 @@
+/* Font styles. */
+/* line 2, ../sass/style.sass */
+body {
+  margin: 0;
+  /* Setting up font size, leading and font family
+   * http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography */
+  font: 13px/1.5em "Helvetica Neue", helvetica, Arial, sans-serif;
+  color: #663300;
+}
+
+/* Links */
+/* line 10, ../sass/style.sass */
+a:link, a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+/* line 15, ../sass/style.sass */
+a:hover, a:active {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Titles. */
+/* line 21, ../sass/style.sass */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3em;
+}
+
+/* line 24, ../sass/style.sass */
+h1 {
+  font-size: 2.2em;
+  font-weight: 300;
+  padding: 0 0 0.5em;
+  margin: 0;
+}
+
+/* line 30, ../sass/style.sass */
+h2 {
+  font-size: 1.8em;
+  font-weight: 300;
+  margin-bottom: 0.75em;
+}
+
+/* line 35, ../sass/style.sass */
+h3 {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+/* line 39, ../sass/style.sass */
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+}
+
+/* line 43, ../sass/style.sass */
+h5 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* line 48, ../sass/style.sass */
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* Paragraph styles. */
+/* line 53, ../sass/style.sass */
+p {
+  margin: 0 0 1em 0;
+}
+
+/* List styles. */
+/* line 57, ../sass/style.sass */
+ul, ol {
+  margin-left: 0;
+  padding-left: 2em;
+}
+
+/* Table styles. */
+/* line 62, ../sass/style.sass */
+table {
+  width: 99%;
+}
+
+/* line 67, ../sass/style.sass */
+tr.even td,
+tr.odd td {
+  padding: 10px 5px;
+}
+
+/* line 70, ../sass/style.sass */
+tr.odd {
+  background-color: white;
+}
+
+/* Code. */
+/* line 74, ../sass/style.sass */
+pre, code, tt {
+  font: 1em "andale mono", "lucida console", monospace;
+  line-height: 1.5;
+}
+
+/* line 78, ../sass/style.sass */
+pre {
+  background-color: #efefef;
+  display: block;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #aaaaaa;
+}
+
+/* List styles. */
+/* line 86, ../sass/style.sass */
+ul {
+  list-style-type: disc;
+}
+/* line 88, ../sass/style.sass */
+ul ul {
+  list-style-type: circle;
+}
+/* line 90, ../sass/style.sass */
+ul ul ul {
+  list-style-type: square;
+}
+/* line 92, ../sass/style.sass */
+ul ul ul ul {
+  list-style-type: circle;
+}
+
+/* line 95, ../sass/style.sass */
+ol {
+  list-style-type: decimal;
+}
+/* line 97, ../sass/style.sass */
+ol ol {
+  list-style-type: lower-alpha;
+}
+/* line 99, ../sass/style.sass */
+ol ol ol {
+  list-style-type: decimal;
+}
+
+/* Abbreviation. */
+/* line 103, ../sass/style.sass */
+abbr {
+  border-bottom: 1px dotted #666666;
+  cursor: help;
+  white-space: nowrap;
+}
+
+/* UI improvments. */
+/* line 109, ../sass/style.sass */
+#edit-title {
+  font-size: 24px;
+  width: 98%;
+}
+
+/* line 113, ../sass/style.sass */
+#system-themes-form img {
+  width: 100px;
+}
+
+/* line 116, ../sass/style.sass */
+.form-item .description {
+  font-style: italic;
+  line-height: 1.2em;
+  font-size: 0.8em;
+  margin-top: 5px;
+  color: #777777;
+}
+
+/* line 123, ../sass/style.sass */
+#edit-delete {
+  color: #cc0000;
+}
+
+/* Console, style from slate theme. */
+/* line 127, ../sass/style.sass */
+div.messages {
+  padding: 9px;
+  margin: 1em 0;
+  color: #003366;
+  background: #bbddff;
+  border: 1px solid #aaccee;
+}
+
+/* line 134, ../sass/style.sass */
+div.warning {
+  color: #884400;
+  background: #ffee66;
+  border-color: #eedd55;
+}
+
+/* line 139, ../sass/style.sass */
+div.error {
+  color: white;
+  background: #ee6633;
+  border-color: #dd5522;
+}
+
+/* line 144, ../sass/style.sass */
+div.status {
+  color: #336600;
+  background: #ccff88;
+  border-color: #bbee77;
+}
+
+/* Region Colors. delete when starting a new theme. */
+/* line 150, ../sass/style.sass */
+
+
+/* line 153, ../sass/style.sass */
+
+
+/* line 156, ../sass/style.sass */
+
+/* line 159, ../sass/style.sass */
+
+#navigation {
+  background: #feffa5;
+}
+
+
+/*Header Region*/
+
+
+#header
+{
+    background-image: url("/5050mkt/sites/default/files/images/headerSantiago.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 581px;
+}
+
+#header-content
+{
+     background-image: url("/5050mkt/sites/default/files/images/headerSantiago.png");
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+#menu-wrapper
+{
+ background: none repeat scroll 0 0 #1A1A1A;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    margin-bottom: 47px;
+}
+
+
+#header-region
+{
+    
+      border: 1px dashed white;
+    border-style: none dashed dashed;
+    border-width: medium 1px 1px;
+    height: 15px;
+    border-top: none;
+    width: 920px;
+    padding: 26px 15px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+      margin-top: -10px;
+
+}
+
+#logo{
+    float:left;
+    margin-right: 15px;
+}
+
+
+#fecha-header-mes-ano
+{
+    float:left;
+}
+
+#fecha-header-dia
+{
+    float: left;
+    margin-right: 11px;
+}
+#fecha-header
+{
+       color: #999999;
+    float: right;
+    margin-left: 20px;
+      position: relative;
+    top: -10px;
+}
+
+#fecha-header-mes
+{
+   display: block;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#fecha-header-ano
+{
+       display: block;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#fecha-header-dia-numero
+{    display: block;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#fecha-header-dia-texto
+{
+     display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+#page
+{
+      background-image: url("/5050mkt/sites/default/files/images/backgroundGradient.png");
+}
+/*Header Region header-region*/
+
+
+
+
+
+/*Menu */
+
+
+#header-region ul.nice-menu ul{
+    top: 60px;
+}
+
+#block-nice_menus-1
+{
+    float:left;
+}
+
+#header #header-region #block-nice_menus-1, #header #header-region #block-nice_menus-1 #nice-menu-1 li
+{
+     background: none repeat scroll 0 0 #1A1A1A;
+    border: medium none;
+    width: auto;
+   
+    
+}
+
+#nice-menu-1
+{
+ margin-top: -3px;    
+}
+
+#header #header-region #block-nice_menus-1 #nice-menu-1 li ul li a
+{
+ background-color: #6F706D;
+    font-size: 20px;
+    height: 30px;
+    min-width: 200px;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+
+
+#header #header-region #block-nice_menus-1 #nice-menu-1 li a
+{
+   /*  padding: 0 40px;
+     font-size:18px;
+     color:white;*/
+     
+    /* font-size: 18px;
+    height: 28px;
+    padding: 15px 30px 10px; */
+    
+    font-size: 18px;
+    height: 27px;
+    margin: 0 18px;
+    padding: 0 6px;
+  
+}
+
+
+#header #header-region #block-nice_menus-1 #nice-menu-1 li a, #header #header-region #block-nice_menus-1 #nice-menu-1 li a:hover
+{
+    color:white;
+    text-decoration: none;
+}
+
+#header #header-region #block-nice_menus-1 #nice-menu-1 li a:hover
+{
+    background-image: url("/5050mkt/sites/default/files/images/menuButtonHover.png");
+}
+
+
+
+#cortinaHeader, #fechaHeader{
+    float:right;
+}
+
+#cortinaHeader
+{
+    margin-top: -15px;
+}
+
+#fechaHeader
+{
+    margin-left: 22px;
+}
+
+
+/*Menu principal ENDS*/
+
+/*Divisores*/
+#header-content-divisor
+{
+    height: 16px;
+    background-image: url("/5050mkt/sites/default/files/images/divisorBackground.png");
+}
+
+#content-footer-divisor
+{
+    height: 16px;
+    background-color: #434343;
+    
+}
+/*Divisores ENDS*/
+
+
+/*Content*/
+
+#main
+{
+    padding-top: 30px;
+     background-image: url("/5050mkt/sites/default/files/images/contentBackground.png");
+     
+}
+
+/*Content*/
+
+/*Footer*/
+#footer
+{
+    
+    min-height: 244px;
+    background-image: url("/5050mkt/sites/default/files/images/footerBackground.png");
+    color: #666666;
+}
+
+#footerContent
+{
+      margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+#cortinaFooterColumn
+{
+    float:left;
+    height:100%;
+   
+}
+#cortinaFooter
+{
+    margin-top: -16px;
+}
+
+
+#newsletter 
+{
+    width: 275px;
+}
+
+#newsletter p
+{
+    width: 218px;
+}
+
+#newsletter span
+{
+    font-size:1.8em;
+    display:block;
+    margin-bottom: 10px;
+}
+
+#newsletter a.no-decoration-anchor,#newsletter a:hover, #newsletter a:active
+{
+     background: none repeat scroll 0 0 #D62222;
+    color: black;
+    font-weight: bold;
+    height: 14px;
+    left: 185px;
+    padding: 4px 0 8px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    top: -29px;
+    width: 80px;
+}
+
+#newsletter input, #newsletter a
+{
+    display: block;
+    float: left;
+    height: 30px;
+    width: 268px;
+}
+
+#mascota-footer
+{
+      clear: both;
+    display: block;
+    float: right;
+    margin-top: -100px;
+}
+
+
+
+
+#secondary-links-container, #newsletter
+{
+   
+         float: left;  
+        padding-top: 10px;
+}
+
+#secondary-links-container
+{
+      margin-right: 15px;
+}
+
+.secondary-links
+{
+
+  float: left;
+    list-style: none outside none;
+    margin-right: 10px;
+}
+
+.secondary-links a, .secondary-links a:hover{
+    color: #666666;
+    text-decoration: none;
+}
+.secondary-links li ul
+{
+      font-size: small;
+    list-style: disc outside none;
+    margin-top: 10px;
+}
+
+
+.footer-section-header
+{
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-section-child
+{
+    font-size: small;
+}
+
+#secundary-links-container
+{
+    padding-top:10px;
+}
+/*Footer ENDS*/
+
+
+/*Descripcion de la empresa*/
+
+#descripcion-de-la-empresa
+{
+    color: #663300;
+}
+
+#descripcion-de-la-empresa p
+{
+    width:898px;
+   
+}
+
+
+.description-strong-text{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+.ultimos-proyectos-selector{
+    float:left;
+    width:12px;
+    height:12px;
+    display: block;
+    cursor:pointer;
+    
+}
+
+
+/*Descripcion de la empresa ENDS*/
+
+
+/*Servicios*/
+       
+.servicios
+{
+    
+}
+
+
+.servicios-data
+{
+    
+}
+
+.servicios-description
+{
+       color: #663300;
+    font-weight: bold;
+    text-align: justify;
+    width: 206px;
+}
+.servicios-icon, .servicios-data
+{
+    float:left;
+    
+}
+
+.servicios-icon
+{
+    margin-right: 10px;
+}
+
+
+.screenshots-ultimos-proyectos
+{
+    display:block;
+    clear:both;
+}
+
+.ultimos-proyectos-selector 
+{
+    background-image: url("/5050mkt/sites/default/files/images/offSlideshowSelector.png");
+}
+
+
+.activeSlide
+{
+    background-image: url("/5050mkt/sites/default/files/images/onSlideshowSelector.png");
+}
+
+.slide-show-selector-off
+{
+    background-image: url("/5050mkt/sites/default/files/images/offSlideshowSelector.png");
+}
+
+
+.servicios-title
+{
+    color:#e21e26;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 1.8em;
+}
+
+/*Servicios END*/
+
+
+/*Ultimos Proyectos*/
+
+.ultimos-proyectos-data
+{
+    float: left;
+    height: 180px;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+.ultimos-proyectos-data p
+{
+    max-width: 385px;
+    clear:both;
+    margin: 0;
+}
+
+.ultimos-proyectos-screenshots-container
+{
+    float:left;
+}
+
+
+.ultimos-proyectos-data p.ultimos-proyectos-nombre-logo
+{
+   
+    margin-right:20px;
+}
+
+
+.ultimos-proyectos-screenshot
+{
+    float:left;
+    margin-right: 30px;
+}
+
+.ultimos-proyectos-header{
+    margin-bottom: 20px;
+    
+}
+
+.screenshots-ultimos-proyectos{
+    width: 290px;
+    height: 197px;
+}
+
+.logo-ultimos-proyectos
+{
+    width: 27px;
+    height: 25px;
+}
+
+#ultimos-proyectos-images-container
+{
+
+    height: 155px;
+    overflow: hidden;
+    
+}
+
+.categorias-ultimos-proyectos
+{
+   
+    
+    float: right;
+    
+   
+}
+
+.comilla-inicio
+{
+    margin:10px;
+    
+}
+.comilla-incio
+{
+    margin: 10px;
+    
+}
+
+.comilla-final
+{
+  position: relative;
+    top: 19px;
+    left: 10px;
+    float:right;
+}
+.ultimos-proyectos-data div.ultimos-proyectos-descripcion-container
+{
+    max-width:  340px;
+    
+      height: 116px;
+}
+
+#comilla-final-container
+{
+    
+}
+
+#ultimos-proyectos-selectors-container
+{
+    float:right;
+    margin-top:10px;
+}
+/*Ultimos Proyectos ENDS*/
+
+
+/*Contactos Page*/
+
+#contacto-header{
+    margin-bottom:30px;
+}
+#logo-mascota
+{
+    margin-bottom: 22px;
+}
+
+#contact-direccion
+{
+    
+}
+
+#contacto-info
+{
+    float:left;
+    
+}
+
+#contacto-info h2
+{
+    margin:0;
+    margin-bottom: 5px;
+}
+
+#contacto-form 
+{
+    float:left;
+    margin-left: 190px;
+}
+
+#contacto-mensaje
+{
+      clear: both;
+    display: block;
+    margin-bottom: 17px;
+      border: 0 none;
+}
+
+#contacto-form label, #contacto-form input
+{
+    
+       border: 0 none;
+    display: block;
+    height: 30px;
+    min-width: 230px;
+}
+
+#contacto-enviar-button
+{
+      background-color: red;
+    color: white;
+    float: right;
+    height: 20px;
+    padding: 5px 0;
+    text-align: center;
+    width: 115px;
+    cursor: pointer;
+}
+
+#contacto-enviar-button-container
+{
+      height: 30px;
+    padding: 10px;
+    width: 115px;
+}
+
+#our-ubication
+{
+    clear: both;
+
+  
+}
+
+#ubication-map
+{
+      width: 330px;
+     height: 232px;
+}
+/*Contactos Page ENDS*/
+
+
+/*Agencia Page*/
+#agencia-atributos{
+   background-image: url("/5050mkt/sites/default/files/images/valoresBackground.png");
+    float: right;
+    height: 292px;
+    padding: 10px;
+    width: 214px;
+}
+
+#agencia-atributos h2
+{
+    
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+
+#agencia-atributos p{
+    color:white;
+}
+
+
+#agencia-description
+{
+    
+    
+    float: left;
+    text-align: justify;
+    width: 590px;
+    font-size: 1.5em;
+}
+
+/*Agencia Page ENDS*/
+
+/*Proyecto*/
+
+#proyecto-header
+{
+    margin-bottom:50px
+}
+
+#proyecto-info
+{
+    float: left;
+    color: #4d4d4d;
+    width: 320px;
+}
+
+#proyecto-info ul
+{
+    margin-bottom: 20px;
+    list-style: none;
+}
+#proyecto-header p
+{
+    color: #434343;
+}
+
+#proyecto-screenshots
+{
+   float: right;
+    overflow: hidden;
+    width: 590px;
+}
+#proyecto-screenshots
+{
+     float: right;
+    
+    width: 640px;
+}
+#proyecto-screenshots p 
+{
+    text-align: center;
+}
+
+
+#proyecto-info h1, #proyecto-info h3
+{
+    color:red;
+    
+}
+
+#proyecto-navegacion
+{
+     margin-top: 40px;
+    text-align: center;
+}
+
+/*Proyecto ENDS*/
+
+
+
+/*Portafolio*/
+
+.portafolio-proyecto
+{
+     float: left;
+    overflow: hidden;
+    width: 290px;
+    margin:5px;
+}
+
+.portafolio-descripcion
+{
+    background-color: #000000;
+    color: #999999;
+    text-align: justify;
+    height: 40px;
+}
+
+
+.portafolio-client, .portafolio-descripcion
+{
+    position:relative;
+    top: -5px;
+}
+
+.portafolio-client
+{
+    background-color: #333333;
+    text-align: center;
+    
+}
+
+.portafolio-client a
+{
+    text-decoration: none;
+    color: #cccccc;
+}
+
+.portafolio-screenshot
+{
+    height: 197px;
+      height: 197px;
+    min-width: 290px;
+}
+/*Portafolio Ends*/
+
+
+
+/*Servicios*/
+.servicios-nombres, .servicios-icono {
+    float: left;
+}
+
+.servicios-servicio {
+ margin-bottom: 20px;   
+}
+
+.servicios-descripcion {
+ 
+}
+.servicios-par h1 {
+    color: #333333;
+}
+.servicios-impar h1 {
+    color: #e02626;
+}
+
+.servicios-impar h1, .servicios-par h1
+{
+     font-size: 3em;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#servicios-header
+{
+    width:700px;
+}
+
+
+.servicios-par{
+    background-image: url("/5050mkt/sites/default/files/images/orillaServiciosPares.png");
+}
+
+.servicios-par{
+    background-image: url("/5050mkt/sites/default/files/images/orillaServiciosPares.png");
+}
+
+.servicios-descripcion {
+    clear: both;
+}
+/*Servicios END*/
+
+
+/*Servicios right Block */
+   
+#block-nodesinblock-0
+{
+color: #663300;
+    font-weight: bold;
+    text-align: justify;
+
+    
+}
+/*Servicios right Block*/
+
+
+/*Useful Classes*/
+.no-decoration-anchor
+{
+    text-decoration: none;
+    
+}
+
+.visible
+{
+    display: block;
+}
+
+.hidden
+{
+    display:none;
+}
+
+.transparent-background
+{
+        background-color: black;
+  
+    opacity: 0.4;
+    
+    
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.justified
+{
+    text-align: justify;
+}
+/*Useful Classes*/
+
