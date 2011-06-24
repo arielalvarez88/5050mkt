@@ -6,7 +6,7 @@
         <title>5050MKT Agencia Creativa</title>
         <?php print $head; ?>
         <?php print $styles; ?>
-
+        <?php var_dump('hola');?>
 <!--        <script type="text/javascript" src="http://use.typekit.com/hxo2xpq.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
 <!--[if lte IE 6]><style type="text/css" media="all">@import "<?php print $base_path . path_to_theme() ?>/css/ie6.css"</style><![endif]-->
