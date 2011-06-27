@@ -18,7 +18,6 @@ abstract class Repository {
 
         $queryData = $this->db->query($query);
 
-        var_dump($query);
         if ($queryData) {
             $queryResults = array();
             while ($result = $queryData->fetch_object()) {
