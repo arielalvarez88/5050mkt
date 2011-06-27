@@ -4,13 +4,16 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-$subject = "Prueba";
+
+$nombre = mysqli_real_escape_string($_POST['nombre']);
+$email = mysqli_real_escape_string($_POST['email']);
+$empresa = mysqli_real_escape_string($_POST['empresa']);
+$mensasje = mysqli_real_escape_string($_POST['mensaje']);
 $to = 'contacto@5050mkt.com';
-$body = 'hola eto e una prudeba';
 $response = new stdClass();
 $response->header = 'Error';
     $response->body = 'Ha ocurrido un error, inténtelo más tarde';
-if(mail($to,$subject,$body))
+if(mail($to,$nombre.'-'.$empresa,$mensaje))
 {
     
     $response->header = 'Confirmación';
