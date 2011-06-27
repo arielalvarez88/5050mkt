@@ -10,7 +10,7 @@ $body = 'hola eto e una prudeba';
 $response = new stdClass();
 $response->header = 'Error';
     $response->body = 'Ha ocurrido un error, inténtelo más tarde';
-if(mail($subject,$to,$body))
+if(mail($to,$subject,$body))
 {
     
     $response->header = 'Confirmación';
