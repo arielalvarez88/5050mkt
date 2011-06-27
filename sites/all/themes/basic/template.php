@@ -37,7 +37,7 @@ function get_time_depending_style(&$vars)
 
 function create_date(&$vars)
 {
-    setlocale(LC_TIME,"Spanish");
+    setlocale(LC_TIME,"Spanish_Spain.28605");
     $day = "%e";
     if (strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')
     {

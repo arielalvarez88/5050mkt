@@ -23,6 +23,52 @@ setRoundCorners = function(){
     }
 };
 
+Validator = function(selectorsJson){
+    
+    for(selector in selectorsJson)
+    {
+        var validationFunction =selectorsJson[selector];
+        if(validationFunction instanceof Function)
+        {
+            
+            var result = validationFunction(selector);
+            if(!result.valid)
+               return false;
+        }
+          
+    }
+    return true;
+   
+}
+
+noEmpty = function(selector)
+{
+    
+    var element = $(selector);
+    var response = {
+        valid: false,
+        message:'valor vacío.'
+    };
+    
+    if(element.val())
+    {
+        response = {
+            valid:true
+        };
+        return response;
+    }
+    else
+    {
+        
+        element.addClass('javascript-validation-wrong');
+        $('<p class="error">Valor vacío.</p>').insertAfter(element);
+        return response;
+    }
+    
+    
+        
+}
+
 
 changeSlideshowPhoto = function(callback){
     if(!slidersPagerLock)
@@ -77,15 +123,15 @@ setPagerClickEvents = function(){
         clearInterval(slideshowInterval);
         
         
-//        var item = $(this);
-//        var id = item.attr('id');
-//        var idLength = 'ultimos-proyectos-selector'.length;
-//         
-//        showingSlide = id.substring(idLength,id.length);
-//        showingSlide = showingSlide-1 <= 0 ? $('.ultimos-proyectos-selector').length: showingSlide-1;
-//        showingSlide = parseInt(showingSlide);
-//        slideshowInterval = setInterval(changeSlideshowPhoto, 4000, function(){showingSlide++;});
-//        
+    //        var item = $(this);
+    //        var id = item.attr('id');
+    //        var idLength = 'ultimos-proyectos-selector'.length;
+    //         
+    //        showingSlide = id.substring(idLength,id.length);
+    //        showingSlide = showingSlide-1 <= 0 ? $('.ultimos-proyectos-selector').length: showingSlide-1;
+    //        showingSlide = parseInt(showingSlide);
+    //        slideshowInterval = setInterval(changeSlideshowPhoto, 4000, function(){showingSlide++;});
+    //        
      
        
 
@@ -145,6 +191,61 @@ drawGoogleMap = function(){
     
 };
 
+
+newsletter_subscribete_click = function(){
+    var value = $('#newsletter-input').val();
+    if(value && value != 'tu email aquí')
+    {
+        var data = {
+            "email" : $('#newsletter-input').val()
+        }
+        $.post('/includes/ajax/subscribete.php', data, jsonMessageBox,'json');
+    
+    }
+    else
+        alert('Entre un valor');
+    
+}
+
+jsonMessageBox= function(data){
+   
+    var width = data.width? data.width : 400;
+    var height = data.height? data.height : 139;
+    var xPosition = ($(window).width()-width)/2;
+    var yPosition = ($(window).height()-height)/2;
+    $('#main').prepend('<div id="message-box"><h2>'+data.header+'</h2><p>'+data.body+'</p><a href="#javascript" id="message-box-close">Cerrar</a></div>').children('#message-box').css({
+        width: width, 
+        height: height, 
+        top: yPosition, 
+        left: xPosition
+    }).children('#message-box-close').click(function(){
+        
+        $(this).parent().hide();
+    });
+    
+    
+}
+
+
+enviarMensajeClick = function()
+{
+    var selectorAndValidationFunction = {
+        '#contacto-nombre' : noEmpty, 
+        '#contacto-email' : noEmpty,
+        '#contacto-empresa' : noEmpty,
+        '#contacto-mensaje' : noEmpty
+    };
+    if(Validator(selectorAndValidationFunction))
+        {
+            var nombre = $('#contacto-nombre').val();
+            var email = $('#contacto-nombre').val();
+            var empresa = $('#contacto-nombre').val();
+            var mensaje = $('#contacto-nombre').val();
+        }
+        $.post('/includes/ajax/contacto-mensaje.php',{nombre: nombre, email: email, empresa: empresa, mensaje: mensaje},jsonMessageBox,'json');
+   
+};
+
 $(document).ready(function(){
     
     
@@ -154,14 +255,16 @@ $(document).ready(function(){
     
     
     $('#prueba').cycle(
-        { 
+    { 
         fx:     'fade', 
         speed:  'fast', 
         timeout: 3000, 
         pager:  '#prueba-nav',
         cleartype: true,
         cleartypeNoBg: true,
-        after: function(){$('.comilla-inicio, .comilla-final').removeAttr("filter");},
+        after: function(){
+            $('.comilla-inicio, .comilla-final').removeAttr("filter");
+        },
 
         pagerAnchorBuilder: function (idx, slide){
             return '<span class="ultimos-proyectos-selector"></span>';
@@ -169,10 +272,12 @@ $(document).ready(function(){
         }
         
         
-        }
+    }
 
     );
-    
+        
+    $('#newsletter-subscribe-button').click(newsletter_subscribete_click);    
+    $('#contacto-enviar-button').click(enviarMensajeClick);
 
         
     setInputsDefaultText();

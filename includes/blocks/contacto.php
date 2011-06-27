@@ -38,11 +38,11 @@
 <div id="contacto-form">
     <form>
         <label class="museo-font">Nombre</label>
-        <input class="round-corners" id="nombre" type="text">
+        <input class="round-corners" id="contacto-nombre" type="text">
         <label class="museo-font">Email</label>
-        <input class="round-corners" id="email" type="text">
+        <input class="round-corners" id="contacto-email" type="text">
         <label class="museo-font">Empresa</label>
-        <input class="round-corners" id="Empresa" type="text">
+        <input class="round-corners" id="contacto-empresa" type="text">
         <label class="museo-font">Mensaje</label>
         
         <textarea class="round-corners" id="contacto-mensaje" rows="10" cols="40">

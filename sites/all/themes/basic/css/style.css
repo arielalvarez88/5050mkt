@@ -626,6 +626,26 @@ div.status {
 /*Descripcion de la empresa ENDS*/
 
 
+/*Message-box*/
+#message-box{
+     background: none repeat scroll 0 0 #FFFFFF;
+    position: fixed;
+    z-index: 1000;
+}
+
+#message-box a {
+   background: none repeat scroll 0 0 #CCCCCC;
+    display: block;
+    height: 23px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+    text-align: center;
+    width: 80px;
+}
+  
+/*Message-box ENDS*/
+
 /*Servicios*/
        
 .servicios
@@ -1155,5 +1175,14 @@ color: #663300;
   -webkit-border-radius:3px;
   -moz-border-radius:3px;
 }
+.javascript-validation-wrong{
+    border: 2px solid red;
+    
+}
+
+.error{
+    color:red;
+}
+
 /*Useful Classes*/
 
