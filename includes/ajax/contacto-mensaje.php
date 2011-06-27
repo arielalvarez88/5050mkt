@@ -5,7 +5,7 @@
  * and open the template in the editor.
  */
 $subject = "Prueba";
-$to = 'contact@5050mkt.com';
+$to = 'contacto@5050mkt.com';
 $body = 'hola eto e una prudeba';
 $response = new stdClass();
 $response->header = 'Error';
