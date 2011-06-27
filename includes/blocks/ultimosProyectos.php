@@ -1,15 +1,13 @@
 <?php
 require_once dirname(__FILE__) . "/../repositories/DrupalRepository.php";
-require_once dirname(__FILE__) . "/../paths.php";
+
 
 $drupalRepository = new DrupalRepository();
-$db_instace = $drupalRepository->getResource();
+
 $query = "SELECT * from (select ct.nid, u.dst as path, ct.field_proyecto_descripcion_value as descripcion, ct.field_proyecto_artes_graficas_value as artes_graficas, ct.field_proyecto_desarrollo_web_value as desarrollo_web, ct.field_proyecto_publicidad_value as publicidad, ct.field_proyecto_marketing_value as marketing, f.filepath as screenshot, ct.field_proyecto_nombre_cliente_value as client_name, ct.field_logo_cliente_fid as logo_id  from content_type_proyecto ct INNER JOIN files f on ct.field_proyecto_screenshot_fid  = f.fid INNER JOIN url_alias u on u.src = CONCAT('node/', nid)) a INNER JOIN (select f.filepath as logo, ct.field_logo_cliente_fid as logo_id from content_type_proyecto ct INNER JOIN files f on ct.field_logo_cliente_fid = f.fid) b on a.logo_id = b.logo_id";
-$results = db_query($query);
-$projects = array();
+$results = $drupalRepository->query($query);
 
-
-while ($project = db_fetch_object($results)) {
+while ($project = $results->fetch_object()) {
     $projects[] = $project;
 }
 ?>
