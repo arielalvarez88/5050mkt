@@ -1,5 +1,6 @@
 <?php
 require_once dirname(__FILE__) . "/../repositories/DrupalRepository.php";
+require_once dirname(__FILE__) . "/../paths.php";
 
 
 $drupalRepository = new DrupalRepository();
