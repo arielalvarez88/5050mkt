@@ -950,18 +950,25 @@ div.status {
 
 
 /*Agencia Page*/
+#agencia-description p{
+    clear: both;
+}
+
 #agencia-atributos{
-     background-image: url("/sites/default/files/images/valores_fondo.png");
-    float: right;
-    height: 478px;
+     background-image: url("/sites/default/files/images/valoresBackground.png");
+    float: left;
+    height: 424px;
     padding-top: 20px;
-    width: 231px;
+    width: 257px;
+    margin-top: 45px;
+    margin-left: 60px;
+    color: white;
 }
 
 #agencia-atributos h2
 {
        background-image: url("/sites/default/files/images/liston.png");
-    color: white;
+    
     font-size: 1.8em;
     font-weight: bold;
     height: 43px;
@@ -974,7 +981,7 @@ div.status {
 }
 
 #agencia-atributos p, #agencia-atributos ul{
-    color:white;
+   
     padding-left: 18px;
 }
 
@@ -987,6 +994,7 @@ div.status {
     text-align: justify;
     width: 590px;
     font-size: 1.2em;
+    
 }
 
 /*Agencia Page ENDS*/
