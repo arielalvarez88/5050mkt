@@ -254,12 +254,12 @@ $(document).ready(function(){
     var ultimosProyectos = $('.cliente-ultimos-proyectos');
     
     
-    $('#prueba').cycle(
+    $('#ultimos-proyectos-slides').cycle(
     { 
         fx:     'fade', 
         speed:  'fast', 
         timeout: 3000, 
-        pager:  '#prueba-nav',
+        pager:  '#ultimos-proyectos-nav',
         cleartype: true,
         cleartypeNoBg: true,
         after: function(){

@@ -238,7 +238,7 @@ div.status {
 
 #header-content
 {
-     background-image: url("/sites/default/files/images/headerSantiago.png");
+    background-image: url("/sites/default/files/images/headerSantiago.png");
     margin-left: auto;
     margin-right: auto;
     width: 960px;
@@ -246,30 +246,38 @@ div.status {
 
 #menu-wrapper
 {
- background: none repeat scroll 0 0 #1A1A1A;
+    background: none repeat scroll 0 0 #1A1A1A;
     height: 60px;
     margin-left: auto;
     margin-right: auto;
     width: 960px;
     margin-bottom: 47px;
+    padding-bottom: 11px;
 }
 
 
 #header-region
 {
     
-      border: 1px dashed white;
+    border: 1px dashed white;
     border-style: none dashed dashed;
     border-width: medium 1px 1px;
     height: 15px;
     border-top: none;
     width: 920px;
-    padding: 26px 15px 15px;
+    padding: 26px 15px 25px;
     margin-left: auto;
     margin-right: auto;
-    
-      margin-top: -10px;
+}
 
+#menu-wrapper,
+#header-region {
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 #logo{
@@ -348,16 +356,20 @@ div.status {
 
 #header #header-region #block-nice_menus-1, #header #header-region #block-nice_menus-1 #nice-menu-1 li
 {
-     background: none repeat scroll 0 0 #1A1A1A;
+    background: none repeat scroll 0 0 transparent;
     border: medium none;
     width: auto;
-   
-    
+    height:48px;
+    margin:-10px 0 0;
+    padding-top:22px;
 }
 
 #nice-menu-1
 {
- margin-top: -3px;    
+ margin-top: -39px;
+ width: 570px;
+ height: 60px;
+ padding-top: 11px;
 }
 
 #header #header-region #block-nice_menus-1 #nice-menu-1 li ul li a
@@ -385,8 +397,8 @@ div.status {
     
     font-size: 18px;
     height: 27px;
-    margin: 0 18px;
-    padding: 0 6px;
+    margin: -22px 18px 0;
+    padding: 22px 10px;
   
 }
 
@@ -410,7 +422,7 @@ div.status {
 
 #cortinaHeader
 {
-    margin-top: -15px;
+    margin-top: -28px;
 }
 
 #fechaHeader
@@ -621,6 +633,33 @@ div.status {
     cursor:pointer;
     
 }
+#ultimos-proyectos-nav
+{
+    min-width: 12px;
+    min-height: 12px;
+    float:right;
+}
+#ultimos-proyectos-nav-container
+{
+        height: 12px;
+    width: 437px;
+     margin-left: auto;
+    margin-right: auto;
+}
+
+#ultimos-proyectos-slides
+{
+     height: 299px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 437px;
+}
+
+.ultimos-proyectos-group
+{
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
 /*Descripcion de la empresa ENDS*/
@@ -717,9 +756,9 @@ div.status {
 
 .ultimos-proyectos-data
 {
-    float: left;
+  
     height: 180px;
-    width: 240px;
+;
     margin-left: 30px;
     padding-top: 20px;
 }
@@ -732,9 +771,9 @@ div.status {
 
 .ultimos-proyectos-screenshots-container
 {
-    float:left;
-    width: 326px;
-    height: 155px;
+   width: 463px;
+    height: 330px;
+   
 }
 
 
@@ -747,8 +786,8 @@ div.status {
 
 .ultimos-proyectos-screenshot
 {
-    float:left;
-    margin-right: 30px;
+    width: 437px;
+    height: 291px;
 }
 
 .ultimos-proyectos-header{
@@ -815,8 +854,12 @@ div.status {
 }
 
 #ultimos-proyectos
-{
+{  
+    height: 326px;
     margin-bottom: 25px;
+    padding-top: 12px;
+    width: 463px;
+    background-image: url('/sites/default/files/images/ultimosProyectosBackground.png');
 }
 
 #ultimos-proyectos-selectors-container
@@ -1171,10 +1214,19 @@ color: #663300;
 
 .round-corners
 {
-     border-radius:3px;
+  border-radius:3px;
   -webkit-border-radius:3px;
   -moz-border-radius:3px;
+  behavior: url('ie-css3.htc');
+
+   z-index: 1000;
+   position: relative;
 }
+.round-corners-inner{
+    z-index:2000;
+    position: absolute;
+}
+
 .javascript-validation-wrong{
     border: 2px solid red;
     

@@ -25,8 +25,8 @@
 
                 <div id="header-content">
                     <?php if ($logo || $top_menu): ?>
-                        <div id="menu-wrapper" class="round-corners">
-                            <div id="header-region" class="round-corners">
+                        <div id="menu-wrapper">
+                            <div id="header-region">
                                 <?php if (!empty($logo)): ?>
                                     <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
                                         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>

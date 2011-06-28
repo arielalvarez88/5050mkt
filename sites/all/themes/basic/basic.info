@@ -34,7 +34,7 @@ stylesheets[print][] = css/print.css
 
 
 
-scripts[] = js/curvycorners.js
+
 scripts[] = js/cufon-yui.js
 scripts[] = js/Museo_Slab_500_400.font.js
 scripts[] = js/jquery.cycle.all.js
