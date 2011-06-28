@@ -182,7 +182,7 @@
                         <span class="museo-font">Newsletter</span>
                         <p class="museo-font">Recibe ofertas e informaciones sobre nuestros servicios</p>
                         <input id="newsletter-input" type="text" class="round-corners"> 
-                            <a href="#" class="no-decoration-anchor round-corners" id="newsletter-subscribe-button">Subscr&iacute;bete</a>
+                            <a href="#javascript" class="no-decoration-anchor round-corners" id="newsletter-subscribe-button">Subscr&iacute;bete</a>
                     </div>
 
                 </div>
