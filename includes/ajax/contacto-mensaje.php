@@ -19,6 +19,7 @@ if(mail($to,$nombre.'-'.$empresa,$mensaje))
     $response->header = 'Confirmación';
     $response->body = 'Su mensaje fue enviado';
     echo json_encode($response);
+    return;
 }
 
 echo json_encode($response);
