@@ -33,7 +33,7 @@ Validator = function(selectorsJson){
             
             var result = validationFunction(selector);
             if(!result.valid)
-               return false;
+                return false;
         }
           
     }
@@ -236,13 +236,18 @@ enviarMensajeClick = function()
         '#contacto-mensaje' : noEmpty
     };
     if(Validator(selectorAndValidationFunction))
-        {
-            var nombre = $('#contacto-nombre').val();
-            var email = $('#contacto-nombre').val();
-            var empresa = $('#contacto-nombre').val();
-            var mensaje = $('#contacto-nombre').val();
-        }
-        $.post('/includes/ajax/contacto-mensaje.php',{nombre: nombre, email: email, empresa: empresa, mensaje: mensaje},jsonMessageBox,'json');
+    {
+        var nombre = $('#contacto-nombre').val();
+        var email = $('#contacto-nombre').val();
+        var empresa = $('#contacto-nombre').val();
+        var mensaje = $('#contacto-nombre').val();
+    }
+    $.post('/includes/ajax/contacto-mensaje.php',{
+        nombre: nombre, 
+        email: email, 
+        empresa: empresa, 
+        mensaje: mensaje
+    },jsonMessageBox,'json');
    
 };
 
@@ -254,27 +259,19 @@ $(document).ready(function(){
     var ultimosProyectos = $('.cliente-ultimos-proyectos');
     
     
-    $('#ultimos-proyectos-slides').cycle(
-    { 
+    $('#ultimos-proyectos-slides').cycle({ 
         fx:     'fade', 
         speed:  'fast', 
         timeout: 3000, 
         pager:  '#ultimos-proyectos-nav',
         cleartype: true,
         cleartypeNoBg: true,
-        after: function(){
-            $('.comilla-inicio, .comilla-final').removeAttr("filter");
-        },
-
+        pagerEvent:    'click',
         pagerAnchorBuilder: function (idx, slide){
             return '<span class="ultimos-proyectos-selector"></span>';
            
         }
-        
-        
-    }
-
-    );
+    });
         
     $('#newsletter-subscribe-button').click(newsletter_subscribete_click);    
     $('#contacto-enviar-button').click(enviarMensajeClick);
