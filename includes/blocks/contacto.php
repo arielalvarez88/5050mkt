@@ -10,32 +10,8 @@
     <p class="museo-font">Para m&aacute;s informaci&oacute;n no dudes en contactarnos.</p>
 </div>
 
-
-
-<div id="contacto-info">
-    <h2 class="museo-font">Direcci&oacute;n</h2>
-    <p class="museo-font" id="contact-direccion">
-        Ave. México esq. Apeco<br>
-        #32B Segundo Nivel,<br>
-        Reparto del Este, Santiago <br>
-    </p>
-    <h2 class="museo-font">Tel&eacute;fono</h2>
-    <p class="museo-font">809-582-2690</p>
-    <h2 class="museo-font">Email</h2>
-    <p class="museo-font">info@5050mkt.com</p>
-  
-    <h2 class="museo-font">Ubicaci&oacute;n</h2>   
-    <div id="ubication-map">
-        
-    </div>
-
-    
-    
-    
-    
-</div>
-
 <div id="contacto-form">
+     <h2 class="museo-font">¿Quieres enviarnos un mensaje?</h2>
     <form>
         <label class="museo-font">Nombre</label>
         <input class="round-corners" id="contacto-nombre" type="text">
@@ -52,5 +28,32 @@
         
     </form>
 </div>
+
+
+<div id="contacto-info">
+     <h2 class="museo-font">Ubicaci&oacute;n</h2>
+      <div id="ubication-map">
+        
+    </div>
+
+    <h2 class="museo-font">Direcci&oacute;n</h2>
+    <p class="museo-font" id="contact-direccion">
+        Ave. México esq. Apeco<br>
+        #32B Segundo Nivel,<br>
+        Reparto del Este, Santiago <br>
+    </p>
+    <h2 class="museo-font">Tel&eacute;fono</h2>
+    <p class="museo-font">809-582-2690</p>
+    <h2 class="museo-font">Email</h2>
+    <p class="museo-font">info@5050mkt.com</p>
+  
+      
+  
+    
+    
+    
+    
+</div>
+
 
 
