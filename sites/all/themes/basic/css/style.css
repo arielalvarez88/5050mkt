@@ -413,7 +413,7 @@ div.status {
     text-decoration: none;
 }
 
-#header #header-region #block-nice_menus-1 #nice-menu-1 li a:hover
+#header #header-region #block-nice_menus-1 #nice-menu-1 li a:hover, .active
 {
     background-image: url("/sites/default/files/images/menuButtonHover.png");
 }
@@ -459,7 +459,7 @@ div.status {
 
 #main
 {
-    padding-top: 30px;
+    padding-top: 0;
      background-image: url("/sites/default/files/images/contentBackground.png");
          min-height: 500px;
 }
@@ -890,13 +890,14 @@ div.status {
 #contacto-info
 {
     float:left;
+    max-width: 300px;
     
 }
 
 #contacto-info h2
 {
     margin:0;
-    margin-bottom: 5px;
+    margin-bottom: -2px;
 }
 
 #contacto-form 

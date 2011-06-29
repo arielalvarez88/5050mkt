@@ -76,6 +76,7 @@
 
 
                 <div id="content">
+                 
                     <div id="content-inner" class="inner column center">
 
                         <?php if ($content_top): ?>
