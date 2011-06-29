@@ -25,8 +25,8 @@ function get_time_depending_style(&$vars)
 {
     date_default_timezone_set("America/La_Paz");
     $dia_o_noche = "Dia";
-    
-    if (date("G") >= 18)
+    $horaEnFormato24= date("G");
+    if ( $horaEnFormato24 >= 18 || $horaEnFormato24 < 5)
         $dia_o_noche = "Noche";
     
     $vars['day_night_sky_background']= "background-image: url('".base_path().file_directory_path()."/images/cieloDe".$dia_o_noche.".png');";
