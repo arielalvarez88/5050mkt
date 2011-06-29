@@ -279,6 +279,7 @@ $(document).ready(function(){
         cleartype: true,
         cleartypeNoBg: true,
         pagerEvent:    'click',
+        activePagerSlide: 'ultimos-proyectos-active-selector',
         pagerAnchorBuilder: function (idx, slide){
             return '<span class="ultimos-proyectos-selector"></span>';
            

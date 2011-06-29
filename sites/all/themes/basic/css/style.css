@@ -733,10 +733,11 @@ div.status {
 .ultimos-proyectos-selector 
 {
     background-image: url("/sites/default/files/images/offSlideshowSelector.png");
+    margin-left: 3px;
 }
 
 
-.activeSlide
+.ultimos-proyectos-active-selector
 {
     background-image: url("/sites/default/files/images/onSlideshowSelector.png");
 }
@@ -1075,22 +1076,22 @@ div.status {
 .portafolio-proyecto
 {
      float: left;
-    overflow: hidden;
-   width: 460px;
-    margin:5px;
-    position:relative;
+    height: 217px;
+    margin: 5px 20px 5px 5px;
+    position: relative;
+    width: 295px;
 }
 
 .portafolio-descripcion
 {
-    background-color: #000000;
-    bottom: 5px;
+background-color: #000000;
+    bottom: 0;
     color: #999999;
     display: none;
     opacity: 0.9;
     padding: 10px;
     position: absolute;
-    width: 460px;
+    width: 275px;
     
 }
 
@@ -1117,8 +1118,8 @@ div.status {
 .portafolio-screenshot
 {
    
-    height: 197px;
-    width: 460px;
+    height: 217px;
+    width: 295px;
 }
 
 #proyecto-portafolio-link
