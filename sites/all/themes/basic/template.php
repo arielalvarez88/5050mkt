@@ -45,7 +45,7 @@ function create_date(&$vars)
     }
     $fecha = new stdClass();
     $fecha->dia_numero = date("j");
-    $fecha->dia_texto = html_entity_decode(strtoupper(strftime("%A")));
+    $fecha->dia_texto = strtoupper(strftime("%A"));
 
     $fecha->mes = strtoupper(strftime("%B"));
     $fecha->ano = strftime("%Y");
