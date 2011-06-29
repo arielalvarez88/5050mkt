@@ -315,9 +315,10 @@ div.status {
 
 #fecha-header-ano
 {
-       display: block;
+         display: block;
     font-size: 1em;
     font-weight: bold;
+    margin-top: 3px;
 }
 
 #fecha-header-dia-numero
@@ -328,9 +329,11 @@ div.status {
 
 #fecha-header-dia-texto
 {
-     display: block;
+      display: block;
     font-size: 0.9em;
     font-weight: bold;
+    margin-top: 4px;
+    text-transform: uppercase;
 }
 
 #page
@@ -1081,30 +1084,28 @@ div.status {
 .portafolio-descripcion
 {
     background-color: #000000;
-    bottom: 25px;
+    bottom: 5px;
     color: #999999;
-    height: 40px;
-    opacity: 0.7;
-    padding: 0 8px;
+    display: none;
+    opacity: 0.9;
+    padding: 10px;
     position: absolute;
     width: 460px;
-    display:none;
     
-}
-
-
-.portafolio-client
-{
-    position: relative;
-    top: -5px;
 }
 
 .portafolio-client
 {
-    background-color: #333333;
-    text-align: center;
+    font-weight: bold;
+}
+.portafolio-descripcion p
+{
+    
+    margin: 0;
     
 }
+
+
 
 .portafolio-client a
 {
