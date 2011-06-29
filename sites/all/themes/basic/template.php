@@ -37,7 +37,7 @@ function get_time_depending_style(&$vars)
 
 function create_date(&$vars)
 {
-    setlocale(LC_TIME,"es_ES");
+    setlocale(LC_TIME,"es_ES.utf8");
     $day = "%e";
     if (strtoupper(substr(PHP_OS, 0, 3)) == 'WIN')
     {
@@ -45,7 +45,8 @@ function create_date(&$vars)
     }
     $fecha = new stdClass();
     $fecha->dia_numero = date("j");
-    $fecha->dia_texto = strtoupper(strftime("%A"));
+    $fecha->dia_texto = html_entity_decode(strtoupper(strftime("%A")));
+
     $fecha->mes = strtoupper(strftime("%B"));
     $fecha->ano = strftime("%Y");
     $vars['fecha'] = $fecha;
