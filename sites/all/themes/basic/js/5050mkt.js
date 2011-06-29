@@ -226,6 +226,17 @@ jsonMessageBox= function(data){
     
 }
 
+setPortafolioProyectoMouseOverEvent = function()
+{
+   
+    $('.portafolio-proyecto').hover(function() {
+        $(this).find('.portafolio-descripcion').slideDown('slow');
+    }, function() {
+        $(this).find('.portafolio-descripcion').slideUp('slow');
+    });
+    
+  
+}
 
 enviarMensajeClick = function()
 {
@@ -254,6 +265,7 @@ enviarMensajeClick = function()
 $(document).ready(function(){
     
     
+
     Cufon.replace('.museo-font');
     Cufon.now();
     var ultimosProyectos = $('.cliente-ultimos-proyectos');
@@ -275,6 +287,9 @@ $(document).ready(function(){
         
     $('#newsletter-subscribe-button').click(newsletter_subscribete_click);    
     $('#contacto-enviar-button').click(enviarMensajeClick);
+    
+    setPortafolioProyectoMouseOverEvent();
+
 
         
     setInputsDefaultText();
