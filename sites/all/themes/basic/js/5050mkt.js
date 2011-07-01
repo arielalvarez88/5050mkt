@@ -261,6 +261,43 @@ enviarMensajeClick = function()
     },jsonMessageBox,'json');
    
 };
+getActiveService = function(){
+    
+    var servicio = $('a.servicio-activo').attr('value');
+   
+    $.post('/includes/ajax/serviciosService.php',{servicio: servicio},mostrarServicioSeleccionado,'json');
+}
+
+mostrarServicioSeleccionado = function (data){
+ $('#servicios-descripcion').html(data.descripcion);
+ var puntosClaves = '';
+ for(i=0; i<data.puntosClaves.length; i++)
+  {
+      puntosClaves += '<li>' + data.puntosClaves[i] + '</li>';
+  }
+     
+ $('#servicios-puntos-claves').html(puntosClaves);
+ $('#servicios-puntos-claves-intro').html(data.puntosClavesIntro);
+   Cufon.replace('.museo-font');
+    Cufon.now();
+ 
+}
+
+setServiciosClickEvents =function ()
+{
+    $('a.servicios-servicio').click(function(){
+        $('.servicio-activo').removeClass('servicio-activo');
+        var servicioClicked = $(this);
+        var servicioAndTitle= servicioClicked.add(servicioClicked.children('span.servicios-titulo'));
+      
+        servicioAndTitle.addClass('servicio-activo');
+        getActiveService();
+    });
+    
+    
+    
+    
+}
 
 
 $(document).ready(function(){
@@ -287,6 +324,10 @@ $(document).ready(function(){
         }
     });
         
+    /*Servicios*/
+        getActiveService();
+        setServiciosClickEvents();
+    /*Servicios END*/
     $('#newsletter-subscribe-button').click(newsletter_subscribete_click);    
     $('#contacto-enviar-button').click(enviarMensajeClick);
     

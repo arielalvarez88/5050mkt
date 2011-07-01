@@ -13,7 +13,7 @@
 
 
     <p class="museo-font">
-        Contamos con un equipo de profesionales con vasto conocimiento de las herramientas mercadológicas que están a la vanguardia y que agregan valor a la percepción de los consumidores. Trabajamos con un alto compromiso con el servicio y la calidad para garantizar el éxito a las soluciones propuestas para satisfacer sus necesidades.
+        Contamos con un equipo de jovenes profesionales comprometidos con lograr optimizar los resultados de su empresa a través de proyectos creativos e innovadores. Trabajamos con un alto compromiso con el servicio y la calidad para garantizar el éxito a las soluciones propuestas para satisfacer sus necesidades.
     </p>
 
 </div>

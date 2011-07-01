@@ -606,6 +606,9 @@ div.status {
 .footer-social-icon
 {
  margin-right: 10px;   
+
+    position: relative;
+    top: 7px;
 }
 
 /*Footer ENDS*/
@@ -692,38 +695,78 @@ div.status {
   
 /*Message-box ENDS*/
 
-/*Servicios*/
+/*Front Servicios*/
        
-.servicios
+.front-servicios
 {
     width: 300px;
     height: 100px;
 }
 
 
-.servicios-data
+.front-servicios-data
 {
     
 }
 
-.servicios-description
+.front-servicios-description
 {
        color: #663300;
     font-weight: bold;
     text-align: justify;
     width: 206px;
 }
-.servicios-icon, .servicios-data
+.front-servicios-icon, .front-servicios-data
 {
-    float:left;
+   float: left;
+    max-width: 179px;
+    
+}
+.front-servicios-description {
+    color: #663300;
+    font-weight: bold;
+    text-align: justify;
+    width: 206px;
+}
+
+.front-servicios-title {
+      color: #E21E26;
+    font-size: 1.8em;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.front-servicios-icon
+{
+      background-image: url("/sites/default/files/images/serviciosSprite.png");
+    height: 83px;
+    margin-right: 10px;
+    width: 76px;
     
 }
 
-.servicios-icon
+
+
+
+
+
+.servicios-title
 {
-    margin-right: 10px;
+    color:#e21e26;
+    margin-bottom: 5px;
+    font-weight: bolder;
+    font-size: 1.8em;
 }
 
+/*Servicios END*/
+
+
+/*Ultimos Proyectos*/
+
+.slide-show-selector-off
+{
+    background-image: url("/sites/default/files/images/offSlideshowSelector.png");
+}
 
 .screenshots-ultimos-proyectos
 {
@@ -742,25 +785,6 @@ div.status {
 {
     background-image: url("/sites/default/files/images/onSlideshowSelector.png");
 }
-
-.slide-show-selector-off
-{
-    background-image: url("/sites/default/files/images/offSlideshowSelector.png");
-}
-
-
-.servicios-title
-{
-    color:#e21e26;
-    margin-bottom: 5px;
-    font-weight: bolder;
-    font-size: 1.8em;
-}
-
-/*Servicios END*/
-
-
-/*Ultimos Proyectos*/
 
 .ultimos-proyectos-data
 {
@@ -962,6 +986,11 @@ div.status {
 /*Agencia Page*/
 #agencia-description p{
     clear: both;
+    width: 765px;
+     color: #483122;
+    
+    font-size: 1.3em;
+    
 }
 
 #agencia-atributos{
@@ -973,7 +1002,7 @@ color: white;
 
 #agencia-mision{
 
-  
+  margin-left: 0;
 
     
 }
@@ -1202,23 +1231,28 @@ background-color: #000000;
 /*Servicios*/
 
 #servicios-panel h2 
-{    border-bottom: 1px solid #D7D7D7;
-    font-size: 1.1em;
+{   border-bottom: 1px solid #b2b29a;
+    font-size: 1.3em;
+    font-weight: bold;
     margin-bottom: 18px;
     padding-bottom: 9px;
-    padding-left: 89px;
+    padding-left: 85px;
 }
 #servicios-panel
 {
-     background-image: url("/sites/default/files/images/serviciosPanel.png");
+   background-image: url("/sites/default/files/images/serviciosPanel.png");
     color: #D5D5C9;
     float: left;
-    font-size: 1.6em;
+    font-size: 1.3em;
+    font-weight: bold;
     height: 400px;
     padding: 10px;
     width: 285px;
 }
-
+div.servicios-ultimo-servicio
+{
+    border:none;
+}
 
 .servicios-negrita
 {
@@ -1229,40 +1263,77 @@ background-color: #000000;
     
 }
 .servicios-seccion{
-     border-bottom: 1px solid #D7D7D7;
-    left: 20px;
-    margin-bottom: 10px;
+   border-bottom: 1px solid #D7D7D7;
+    height: 48px;
+    left: 8px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
     position: relative;
-    width: 272px;
+    width: 285px;
 }
+
 .servicios-icono
 {
+  background-image: url("/sites/default/files/images/serviciosSprite.png");
+    display: block;
+    float: left;
+    height: 68px;
+    left: -22px;
+    position: relative;
+    top: -33px;
+    width: 70px;
     
 }
-.servicios-servicio{
-  color: #878787;
+a.servicios-servicio{
+   -moz-border-radius: 10px 10px 10px 10px;
+   border-radius: 10px 10px 10px 10px;
+    color: #878787;
     display: block;
     height: 35px;
-    left: 16px;
+    left: 39px;
     padding-top: 14px;
     position: relative;
     text-align: center;
-    width: 280px;
+    top: 4px;
+    width: 260px;
+    z-index: 1000;
+    
 }
-.servicios-servicio:hover
+.servicios-servicio:hover,a.servicio-activo
 {
-    background-color: #e02222;
+  background-color: #E02222;
+    color: white;
+    text-decoration: none;
+     
+}
+
+span.servicio-activo
+{
       color: white;
 }
 
 .servicios-titulo
 {
-    
+   display: block;
+    float: left;
+    text-align: right;
+    width: 166px;
+    color: #878787;
+}
+
+#servicios-puntos-claves
+{
+    list-style-image:url('/sites/default/files/images/serviciosListBullet.png');
 }
 
 #servicios-info
 {
-    color :#483122;
+  color: #483122;
+    float: left;
+    font-size: 1.3em;
+    margin-left: 50px;
+    padding-top: 20px;
+    width: 570px;
 }
 
 #servicios-info h3
@@ -1271,7 +1342,15 @@ background-color: #000000;
 }
 #servicios-info-titulo
 {
-        color: #E02626;
+         color: #E02626;
+    font-size: 1.8em;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+#servicios-proyectos-relacionados {
+      border-bottom: 1px solid #DEDCCE;
+    padding-bottom: 5px;
 }
 
 /*Servicios END*/
