@@ -532,7 +532,8 @@ div.status {
     display: block;
     float: left;
     height: 30px;
-    width: 268px;
+    padding-left:10px;
+    width: 256px;
 }
 
 #mascota-footer
@@ -614,19 +615,19 @@ div.status {
 
 #descripcion-de-la-empresa
 {
+    padding-top:40px;
     color: #663300;
 }
 
 #descripcion-de-la-empresa p
 {
+    font-size:22px;
     width:898px;
-   
 }
 
 
 .description-strong-text{
     font-weight: bold;
-    font-size: 20px;
 }
 
 
@@ -964,36 +965,101 @@ div.status {
 }
 
 #agencia-atributos{
-     background-image: url("/sites/default/files/images/valoresBackground.png");
-    float: left;
-    height: 424px;
-    padding-top: 20px;
-    width: 257px;
-    margin-top: 45px;
-    margin-left: 60px;
-    color: white;
+clear: both;
+color: white;
+
+
 }
 
-#agencia-atributos h2
-{
-       background-image: url("/sites/default/files/images/liston.png");
+#agencia-mision{
+
+  
+
     
-    font-size: 1.8em;
-    font-weight: bold;
-    height: 43px;
-    left: -32px;
-    margin-bottom: 0;
-    padding-left: 40px;
-    padding-top: 8px;
-    position: relative;
-    width: 220px;
 }
 
-#agencia-atributos p, #agencia-atributos ul{
+#agencia-vision{
+ 
+    
+ 
    
-    padding-left: 18px;
 }
 
+#agencia-valores{
+  
+   
+}
+
+.agencia-atributo{
+background-image: url("/sites/default/files/images/atributosBackground2.png");
+    float: left;
+    font-size: 1em;
+    height: 173px;
+    margin: 16px;
+    padding-left: 11px;
+    padding-top: 23px;
+    width: 251px;
+}
+
+.agencia-atributo h1 {
+    background: none no-repeat scroll 0 3px transparent;
+    height: 27px;;
+}
+
+ #agencia-atributos ul{
+width: 224px;   
+  
+}
+
+#agencia-mision-title
+{
+   background-image: url("/sites/default/files/images/misionListon.png"); 
+
+   
+    left: -39px;
+    padding-left: 55px;
+    position: relative;
+    width: 201px;
+}
+
+#agencia-vision-title
+{
+      background-image: url("/sites/default/files/images/visionListon.png");
+    left: -26px;
+    position: relative;
+    text-align: center;
+    width: 291px;
+}
+
+#agencia-valores-title
+{
+   background-image: url("/sites/default/files/images/valoresListon.png");
+    left: 24px;
+    padding-left: 113px;
+    position: relative;
+    width: 143px;
+}
+
+.agencia-atributos-orilla
+{
+background-image: url("/sites/default/files/images/atributosOrilla.png");
+    height: 4px;
+    left: -11px;
+    position: relative;
+    top: -15px;
+    width: 232px;
+}
+.agencia-atributo p, .agencia-atributo ul
+{
+    
+    
+     display: block;
+    height: 84px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 11px;
+    
+}
 
 #agencia-description
 {
@@ -1134,48 +1200,80 @@ background-color: #000000;
 
 
 /*Servicios*/
-.servicios-nombres, .servicios-icono {
+
+#servicios-panel h2 
+{    border-bottom: 1px solid #D7D7D7;
+    font-size: 1.1em;
+    margin-bottom: 18px;
+    padding-bottom: 9px;
+    padding-left: 89px;
+}
+#servicios-panel
+{
+     background-image: url("/sites/default/files/images/serviciosPanel.png");
+    color: #D5D5C9;
     float: left;
+    font-size: 1.6em;
+    height: 400px;
+    padding: 10px;
+    width: 285px;
 }
 
-.servicios-servicio {
- margin-bottom: 20px;   
-}
 
-.servicios-descripcion {
- 
-}
-.servicios-par h1 {
-    color: #333333;
-}
-.servicios-impar h1 {
-    color: #e02626;
-}
-
-.servicios-impar h1, .servicios-par h1
+.servicios-negrita
 {
-     font-size: 3em;
-    font-weight: bold;
-    padding: 15px;
+    color:#483122;
 }
-
-#servicios-header
+.servicios-data
 {
-    width:700px;
+    
+}
+.servicios-seccion{
+     border-bottom: 1px solid #D7D7D7;
+    left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 272px;
+}
+.servicios-icono
+{
+    
+}
+.servicios-servicio{
+  color: #878787;
+    display: block;
+    height: 35px;
+    left: 16px;
+    padding-top: 14px;
+    position: relative;
+    text-align: center;
+    width: 280px;
+}
+.servicios-servicio:hover
+{
+    background-color: #e02222;
+      color: white;
 }
 
-
-.servicios-par{
-    background-image: url("/sites/default/files/images/orillaServiciosPares.png");
+.servicios-titulo
+{
+    
 }
 
-.servicios-par{
-    background-image: url("/sites/default/files/images/orillaServiciosPares.png");
+#servicios-info
+{
+    color :#483122;
 }
 
-.servicios-descripcion {
-    clear: both;
+#servicios-info h3
+{
+    font-size: 1.2em;
 }
+#servicios-info-titulo
+{
+        color: #E02626;
+}
+
 /*Servicios END*/
 
 

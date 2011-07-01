@@ -6,9 +6,9 @@
 ?>
 
 <div id="agencia-description">
-    <?php require_once dirname(__FILE__).'/logoMascota.php';?>
+    <?php require_once dirname(__FILE__) . '/logoMascota.php'; ?>
     <p class="museo-font">
-        Somos una agencia creativa que se introduce en el mercado de servicios con un concepto innovador y una clara visión  de las necesidades del sector y las exigencias de sus clientes. Ofrecemos soluciones empresariales mediante la consultoría y asesoramiento en las áreas de mercadeo, publicidad y desarrollo web.
+        Somos una agencia creativa que se introduce en el mercado de servicios con un concepto innovador y una clara visión  de las necesidades y las exigencias del mercado. Ofrecemos soluciones empresariales mediante la consultoría y asesoramiento en las áreas de mercadeo, publicidad y desarrollo web.
     </p>
 
 
@@ -19,37 +19,39 @@
 </div>
 
 
-<div id="agencia-atributos">
+<div id="agencia-atributos" class="museo-font">
 
-    <h2 class="museo-font">Misi&oacute;n:</h2>
-    <p id="agencia-mision" class="museo-font">
-        Brindar soluciones corporativas mediante estrategias
+    <div id="agencia-mision" class="agencia-atributo">
+        <p>Brindar soluciones corporativas mediante estrategias
         creativas que logren impacto en
         el mercado.
-    </p>
+        </p>
+        <h1 id="agencia-mision-title">Misi&oacute;n</h1>
+       
+    </div>
 
-
-    <h2 class="museo-font">Visi&oacute;n:</h2>
-    <p id="agencia-vision" class="museo-font">
-
+    <div id="agencia-vision" class="agencia-atributo">
+        <p>
         Servir como el principal aliado
         estratégico de proyección en el
         mercado de las pymes de la
         región.
-    </p>
-
-
-    <h2 class="museo-font">Valores:</h2>
-    <p id="agencia-valores" class="museo-font">
-    <ul class="museo-font">
-        <li>Responsabilidad</li>
-        <li>Lealtad</li>
-        <li>Innovación</li>
-        <li>Trabajo en equipo</li>
-        <li>Profesionalismo</li>
+        </p>
+        <h1 id="agencia-vision-title">Visi&oacute;n</h1>
         
-    </ul>
-</p>
+    </div>
+    
+    <div id="agencia-valores" class="agencia-atributo">
+        <ul class="museo-font">
+            <li>Responsabilidad</li>
+            <li>Lealtad</li>
+            <li>Innovación</li>
+            <li>Trabajo en equipo</li>
+            <li>Profesionalismo</li>
+        </ul>
+        <h1 id="agencia-valores-title">Valores</h1>
+        
+    </div>
 
 </div>
 
