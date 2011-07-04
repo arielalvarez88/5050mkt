@@ -13,8 +13,7 @@ $previous_proyect_path = node_load($node->field_proyecto_anterior[0]['nid'])->pa
 
 <div id="proyecto-header">
     <h1 class="museo-font">Proyectos Realizados</h1>
-    <p class="museo-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+    
 </div>
 
 <div id="proyecto-body">
@@ -40,17 +39,12 @@ $previous_proyect_path = node_load($node->field_proyecto_anterior[0]['nid'])->pa
                
         </ul>
         <?php if ($node->field_proyecto_requerimientos): ?>
-            <h3 class="museo-font bold">Requerimientos del proyecto</h3>
+        <h3 class="museo-font bold">Descripci&oacute;n del proyecto</h3>
             <p class="museo-font ">
                 <?php echo $node->field_proyecto_requerimientos[0]['safe']; ?>
             </p>
         <?php endif; ?>
-         <?php if ($node->field_proyecto_solucion): ?>
-            <h3 class="museo-font bold">Soluci&oacute;n</h3>
-            <p class="museo-font ">
-                <?php echo $node->field_proyecto_solucion[0]['safe']; ?>
-            </p>
-        <?php endif; ?>
+        
             
             <div id="proyecto-navegacion">
                 
