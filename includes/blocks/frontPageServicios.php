@@ -13,7 +13,7 @@
 
 require_once dirname(__FILE__).'/../clases/ServiciosSimpleFactory.php';
 
-$servicios = array("no","MARKETING", "PUBLICIDAD", "ARTES GR&Aacute;FICAS", "DESARROLLO WEB","OUTSOURCING");
+$servicios = array("no","MARKETING", "PUBLICIDAD", "ARTES GR&Aacute;FICAS", "DESARROLLO WEB");
 $cantidadServicios = count($servicios);
 $backgroundPositionStyle = 'style="background-position: 0 ';
 $backgroundPosition = 0;

@@ -624,13 +624,17 @@ div.status {
 
 #descripcion-de-la-empresa p
 {
-    font-size:22px;
+    font-size:18px;
     width:898px;
+
+        font-weight: normal;
+ 
+
 }
 
 
 .description-strong-text{
-    font-weight: bold;
+    font-weight: 600;
 }
 
 
@@ -731,7 +735,7 @@ div.status {
 
 .front-servicios-title {
       color: #E21E26;
-    font-size: 1.8em;
+    font-size: 1.3em;
     font-weight: bolder;
     margin-bottom: 5px;
 }
@@ -1097,7 +1101,8 @@ background-image: url("/sites/default/files/images/atributosOrilla.png");
     float: left;
     text-align: justify;
     width: 590px;
-    font-size: 1.2em;
+    font-size: 1em;
+    margin-bottom: 10px;
     
 }
 
