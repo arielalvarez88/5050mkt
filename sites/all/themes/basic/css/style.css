@@ -473,6 +473,7 @@ div.status {
     min-height: 244px;
     background-image: url("/sites/default/files/images/footerBackground.png");
     color: #666666;
+    position: relative;
 }
 
 #footerContent
@@ -538,8 +539,8 @@ div.status {
 
 #mascota-footer
 {
-     float: right;
-    position: relative;
+        position: absolute;
+    right: 0;
     top: -159px;
 }
 
