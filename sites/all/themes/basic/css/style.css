@@ -627,7 +627,7 @@ div.status {
 {
     font-size:18px;
     width:898px;
-
+text-align: justify;
         font-weight: normal;
  
 
@@ -718,7 +718,7 @@ div.status {
 {
        color: #663300;
     font-weight: bold;
-    text-align: justify;
+    text-align: left;
     width: 206px;
 }
 .front-servicios-icon, .front-servicios-data
@@ -727,12 +727,7 @@ div.status {
     max-width: 179px;
     
 }
-.front-servicios-description {
-    color: #663300;
-    font-weight: bold;
-    text-align: justify;
-    width: 206px;
-}
+
 
 .front-servicios-title {
       color: #E21E26;
@@ -1344,6 +1339,8 @@ span.servicio-activo
     margin-left: 50px;
     padding-top: 20px;
     width: 570px;
+    
+      text-align: justify;
 }
 
 #servicios-info h3
