@@ -20,7 +20,7 @@ class Marketing extends Servicio{
         $puntosClavesIntro = "Podemos ayudarte con:";
         $puntosClaves= array('Diseño de planes y estrategias de mercadeo.','Implementación de planes, programas y actividades de mercadeo.','Asesoría en la planeación de los procesos de mercadeo en nuevas empresas.');
         $sceenshots = array('primero');
-        $descripcionCorta = 'Descubre las acciones más efectivas para lograr conocer el mercado meta.';
+        $descripcionCorta = 'Descubre las acciones más efectivas para lograr conocer tu mercado meta.';
        
         parent::__construct($descripcion, $puntosClavesIntro, $puntosClaves, $screenshots,$descripcionCorta);
     }
