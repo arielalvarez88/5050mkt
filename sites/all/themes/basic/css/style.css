@@ -1092,7 +1092,7 @@ background-image: url("/sites/default/files/images/atributosOrilla.png");
     
     
      display: block;
-    height: 84px;
+    height: 100px;
     margin-bottom: 0;
     padding-bottom: 0;
     padding-top: 11px;
@@ -1354,19 +1354,19 @@ span.servicio-activo
 
 
 #servicios-info h3 {
-    margin-bottom: -8px;
+        margin-bottom: 10px;
 }
 
 #servicios-descripcion
 {
-    margin-bottom: 0;
+     margin-bottom: 10px;
 }
 #servicios-info-titulo
 {
-         color: #E02626;
+   color: #E02626;
     font-size: 1.8em;
-    margin-bottom: 0;
     font-weight: 900;
+    margin-bottom: 10px;
 }
 
 #servicios-proyectos-relacionados {

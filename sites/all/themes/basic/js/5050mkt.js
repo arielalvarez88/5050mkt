@@ -278,8 +278,7 @@ mostrarServicioSeleccionado = function (data){
      
  $('#servicios-puntos-claves').html(puntosClaves);
  $('#servicios-puntos-claves-intro').html(data.puntosClavesIntro);
-   Cufon.replace('.museo-font');
-    Cufon.now();
+
  
 }
 
@@ -302,10 +301,7 @@ setServiciosClickEvents =function ()
 
 $(document).ready(function(){
     
-    
 
-    Cufon.replace('.museo-font');
-    Cufon.now();
     var ultimosProyectos = $('.cliente-ultimos-proyectos');
 
     

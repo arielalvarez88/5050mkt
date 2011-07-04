@@ -192,6 +192,8 @@
 
         </div> <!-- /page -->
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="http://use.typekit.com/hxo2xpq.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         <?php print $scripts; ?>
 
         <?php print $closure; ?>

@@ -33,10 +33,6 @@ stylesheets[all][] = css/coin-slider-styles.css
 stylesheets[print][] = css/print.css
 
 
-
-
-scripts[] = js/cufon-yui.js
-scripts[] = js/Museo_Slab_500_400.font.js
 scripts[] = js/jquery.cycle.all.js
 scripts[] = js/jquery-ui-1.8.14.custom.min.js
 scripts[] = js/5050mkt.js
