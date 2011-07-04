@@ -33,10 +33,10 @@
 
     </div>
 
-    <div id="contacto-header">
-        <h3 class="museo-font"><p class="museo-font">Para m&aacute;s informaci&oacute;n no dudes en contactarnos.</p></h3>
+ 
+        <h3 id="contacto-header" class="museo-font">Para m&aacute;s informaci&oacute;n no dudes en contactarnos.</h3>
         
-    </div>
+    
 
     <h2 class="museo-font">Direcci&oacute;n</h2>
     <p class="museo-font" id="contact-direccion">

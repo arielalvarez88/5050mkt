@@ -31,7 +31,7 @@ $backgroundPosition = 0;
 
 <div id="servicios-info" class="museo-font">
     <h2 id="servicios-info-titulo">
-        Para un mundo competitivo
+        En un mundo competitivo
     </h2>
 
     <p id="servicios-descripcion">
@@ -43,6 +43,6 @@ $backgroundPosition = 0;
 
     </ul>
 
-    <h3 id="servicios-proyectos-relacionados">Proyectos Relacionados: </h3>
+<!--    <h3 id="servicios-proyectos-relacionados">Proyectos Relacionados: </h3>-->
 
 </div>
