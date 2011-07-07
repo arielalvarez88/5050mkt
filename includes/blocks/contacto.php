@@ -47,7 +47,7 @@
     <h2 class="museo-font">Tel&eacute;fono</h2>
     <p class="museo-font">809-582-2690</p>
     <h2 class="museo-font">Email</h2>
-    <p class="museo-font">info@5050mkt.com</p>
+    <p class="museo-font">contacto@5050mkt.com</p>
 
 
 
