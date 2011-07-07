@@ -230,7 +230,10 @@ setPortafolioProyectoMouseOverEvent = function()
 {
    
     $('.portafolio-proyecto').hover(function() {
-        $(this).find('.portafolio-descripcion').slideDown('slow');
+        var element = $(this);
+        $('.portafolio-descripcion').stop(false,true);
+        element.find('.portafolio-descripcion').slideDown('slow');
+        
     }, function() {
         $(this).find('.portafolio-descripcion').slideUp('slow');
     });
