@@ -232,7 +232,7 @@ div.status {
 {
    
     background-position: center bottom;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     height: 581px;
 }
 
