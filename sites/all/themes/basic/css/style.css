@@ -508,7 +508,12 @@ div.status {
     display:block;
     margin-bottom: 10px;
 }
-
+#newsletter-subscribe-button
+{
+    color: white;
+    background-image: url("/sites/default/files/images/menuButtonHover.png");
+    
+}
 #newsletter a.no-decoration-anchor,#newsletter a:hover, #newsletter a:active
 {
      background: none repeat scroll 0 0 #D62222;
@@ -952,7 +957,7 @@ text-align: justify;
 
 #contacto-enviar-button
 {
-      background-color: red;
+      background-image: url("/sites/default/files/images/menuButtonHover.png");
     color: white;
     float: left;
     height: 20px;
