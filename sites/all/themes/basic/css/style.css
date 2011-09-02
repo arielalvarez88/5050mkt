@@ -516,7 +516,7 @@ div.status {
 }
 #newsletter a.no-decoration-anchor,#newsletter a:hover, #newsletter a:active
 {
-     background: none repeat scroll 0 0 #D62222;
+     background: none repeat scroll 0 0;
     color: black;
     font-weight: bold;
     height: 14px;
