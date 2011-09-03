@@ -508,10 +508,11 @@ div.status {
     display:block;
     margin-bottom: 10px;
 }
-#newsletter-subscribe-button
+#newsletter a#newsletter-subscribe-button
 {
+	background-image: url("/sites/default/files/images/menuButtonHover.png");
     color: white;
-    background-image: url("/sites/default/files/images/menuButtonHover.png");
+    
     
 }
 #newsletter a.no-decoration-anchor,#newsletter a:hover, #newsletter a:active
