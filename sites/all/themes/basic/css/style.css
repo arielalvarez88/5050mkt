@@ -367,7 +367,7 @@ div.status {
 #nice-menu-1
 {
  margin-top: -39px;
- width: 570px;
+ width: auto;
  height: 60px;
  padding-top: 11px;
 }
@@ -423,7 +423,7 @@ div.status {
 #cortinaHeader
 {
     margin-top: -28px;
-    right: 198px;
+    right: 214pxpx;
     position: absolute;
 }
 
