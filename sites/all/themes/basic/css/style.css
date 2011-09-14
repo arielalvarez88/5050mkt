@@ -433,7 +433,16 @@ div.status {
 }
 
 
+
 /*Menu principal ENDS*/
+
+/*Contactos Info*/
+#contacts-info a
+{
+    background-image: url("/sites/default/files/images/common/redCornerButton.png");
+}
+/*Contactos Info ENDS*/
+
 
 /*Divisores*/
 #header-content-divisor
