@@ -263,10 +263,10 @@ div.status {
     border: 1px dashed white;
     border-style: none dashed dashed;
     border-width: medium 1px 1px;
-    height: 15px;
+    height: 31px;
     border-top: none;
     width: 920px;
-    padding: 26px 15px 25px;
+    padding: 26px 15px 8px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -422,8 +422,8 @@ div.status {
 
 #cortinaHeader
 {
+	left: 685px;
     margin-top: -28px;
-    right: 214pxpx;
     position: absolute;
 }
 
