@@ -7,6 +7,7 @@
 $next_proyect_path = node_load($node->field_proyecto_siguiente[0]['nid'])->path;
 
 $previous_proyect_path = node_load($node->field_proyecto_anterior[0]['nid'])->path;
+$web_page_url = $node->field_proyecto_web_page[0]['url'];
 
 
 ?>
@@ -45,6 +46,9 @@ $previous_proyect_path = node_load($node->field_proyecto_anterior[0]['nid'])->pa
             </p>
         <?php endif; ?>
         
+            <?php if($web_page_url):?>
+            <a href="<?php echo $web_page_url;?>" class="no-decoration-anchor">Visitar  la p&acute;gina web</a>
+            <?php endif;?>
             
             <div id="proyecto-navegacion">
                 
