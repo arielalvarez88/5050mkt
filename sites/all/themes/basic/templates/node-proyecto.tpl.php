@@ -47,7 +47,7 @@ $web_page_url = $node->field_proyecto_web_page[0]['url'];
         <?php endif; ?>
         
             <?php if($web_page_url):?>
-            <a href="<?php echo $web_page_url;?>" class="no-decoration-anchor">Visitar  la p&acute;gina web</a>
+            <a href="<?php echo $web_page_url;?>" class="no-decoration-anchor">Visitar  la p&aacute;gina web</a>
             <?php endif;?>
             
             <div id="proyecto-navegacion">
