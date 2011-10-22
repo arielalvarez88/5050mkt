@@ -177,13 +177,15 @@
                             <?php print buildSecundaryLinks($secondary_links); ?>
                         </div>
                     <?php endif; ?>
-
-                    <div id="newsletter">
+<div id="newsletter">
                         <span class="museo-font">Newsletter</span>
                         <p class="museo-font">Recibe ofertas e informaciones sobre nuestros servicios</p>
-                        <input id="newsletter-input" type="text" class="round-corners"> 
-                            <a href="#javascript" class="no-decoration-anchor round-corners" id="newsletter-subscribe-button">Suscr&iacute;bete</a>
-                    </div>
+                        <div id="newsletter-email-container" class="round-corners">
+                            <input type="text" class="round-corners" id="newsletter-input"/> 
+                            <a id="newsletter-subscribe-button" class="no-decoration-anchor round-corners" href="#javascript">Suscríbete</a>
+                        </div>
+                        
+</div>
 
                 </div>
                 <img alt="mascota" id="mascota-footer" src="<?php echo base_path() . file_directory_path(); ?>/images/mascotaFooter.png">
