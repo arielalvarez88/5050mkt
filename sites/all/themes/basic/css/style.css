@@ -511,6 +511,13 @@ div.status {
     width: 218px;
 }
 
+#newsletter-email-container {
+    background-color: white;
+    height: 32px;
+    position: relative;
+    width: 268px;
+}
+
 #newsletter span
 {
     font-size:1.8em;
@@ -526,26 +533,27 @@ div.status {
 }
 #newsletter a.no-decoration-anchor,#newsletter a:hover, #newsletter a:active
 {
-     background: none repeat scroll 0 0;
+     background: none repeat scroll 0 0 transparent;
     color: black;
     font-weight: bold;
     height: 14px;
     left: 185px;
     padding: 4px 0 8px;
-    position: relative;
+    position: absolute;
     text-align: center;
     text-decoration: none;
-    top: -29px;
+    top: 3px;
     width: 80px;
 }
 
 #newsletter input, #newsletter a
 {
+     border: 0 none;
     display: block;
     float: left;
-    height: 30px;
-    padding-left:10px;
-    width: 256px;
+    height: 32px;
+    padding-left: 10px;
+    width: 174px;
 }
 
 #mascota-footer

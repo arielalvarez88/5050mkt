@@ -1,13 +1,4 @@
-<?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
-
-<div id="newsLetter">
-    <h3 class="museo-font">NewsLetter</h3>
-    <p class="museo-font">Recibe Ofertas e informaciones sobre nuestros servicios</p>
-    <input type="text"> <a href="#" class="no-decoration-acnhor" id="newsletter-subscribe-button">Subscribe</a>
-</div>
+<div class="round-corners" id="newsletter-email-container">
+                        <input type="text" id="newsletter-input" class="round-corners"> 
+                            <a href="#javascript" class="no-decoration-anchor round-corners" id="newsletter-subscribe-button">Suscríbete</a>
+                        </div>
