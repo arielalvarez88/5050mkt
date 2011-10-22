@@ -30,7 +30,10 @@ $projects = $drupalRepository->query($query);
             <?php for ($i = 1; $i <= count($projects); $i++): ?>
                 <div class="ultimos-proyectos-group">
                     <div class="ultimos-proyectos-screenshots-container">
-                        <a href="<?php echo $projects[$i - 1]->path; ?>"><img width="326" height="155" class="ultimos-proyectos-screenshot" id="screenshots-ultimos-proyectos<?php echo $i; ?>" alt="screenshot del proyecto" src="<?php echo $paths->root; ?>/<?php echo $projects[$i - 1]->screenshot; ?>"></a>
+                        <a href="<?php echo $projects[$i - 1]->path; ?>">
+                            <?php echo theme('imagecache','front_page_slides',$projects[$i - 1]->screenshot,'foto-del-proyeccto','foto-del-proyecto',array("class" => "ultimos-proyectos-screenshot", "id"=> "screenshots-ultimos-proyectos".$i));?>
+                                                            
+                        </a>
                     </div>
                 </div>
 
