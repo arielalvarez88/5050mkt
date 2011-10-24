@@ -192,7 +192,8 @@ drawGoogleMap = function(){
 };
 
 
-newsletter_subscribete_click = function(){
+newsletterSubscribeteClick = function(event){
+    event.preventDefault();
     var value = $('#newsletter-input').val();
     if(value && value != 'tu email aquí')
     {
@@ -327,7 +328,7 @@ $(document).ready(function(){
         getActiveService();
         setServiciosClickEvents();
     /*Servicios END*/
-    $('#newsletter-subscribe-button').click(newsletter_subscribete_click);    
+    $('#newsletter-subscribe-button').click(newsletterSubscribeteClick);    
     $('#contacto-enviar-button').click(enviarMensajeClick);
     
     setPortafolioProyectoMouseOverEvent();

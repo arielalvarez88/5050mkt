@@ -1,7 +1,7 @@
 <?php
 
 require_once dirname(__FILE__) . '/../repositories/DrupalRepository.php';
-require_once dirname(__FILE__) . '/../classes/Validator.php';
+require_once dirname(__FILE__) . '/../clases/Validator.php';
 $response = new stdClass();
 $validator = new Validator();
 $response->header = 'Error';
