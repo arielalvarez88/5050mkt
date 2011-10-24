@@ -1,21 +1,36 @@
 <?php
 
 require_once dirname(__FILE__) . '/../repositories/DrupalRepository.php';
+require_once dirname(__FILE__) . '/../classes/Validator.php';
 $response = new stdClass();
+$validator = new Validator();
 $response->header = 'Error';
-$response->body = 'Se ha producido un error.';
+$response->body = 'Introduzca un email válido';
 
 if ($_POST['email']) {
     $drupalRepository = new DrupalRepository();
     $email = $drupalRepository->escapeString($_POST['email']);
-    $query = "INSERT INTO contactos (email) VALUES ('" .$email."')";
-
-    $results = $drupalRepository->insert($query);
-    if($results)
+    if($validator->validate_email($email))
     {
-       $response->header = 'Confirmado';
-       $response->body = $email.' ha sido agregado en el newsletter.';
+        
+        $query = "INSERT INTO contactos (email) VALUES ('" .$email."')";
+
+        $results = $drupalRepository->insert($query);
+        if($results)
+        {
+           $response->header = 'Confirmado';
+           $response->body = $email.' ha sido agregado en el newsletter.';
+        }
+        else
+        {
+            $response->header = 'Error';
+           $response->body = 'Intentelo más tarde.';
+        }
+            
+        
     }
+    
+    
     
     
 }
