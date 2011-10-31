@@ -1329,8 +1329,12 @@ a.servicios-servicio{
     
 }
 
+a.servicios-servicio:hover span.servicios-titulo
+{
+    
+}
 
-a.servicios-servicio:hover span.servicios-titulo, a.servicio-activo
+a.servicios-servicio:hover, a.servicios-servicio:hover span.servicios-titulo, a.servicio-activo
 {
   background-color: #E02222;
     color: white;
